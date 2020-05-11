@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="linkedin-circular-button" transform="translate(0)">
+    <g id="Group_9" data-name="Group 9">
+      <g id="Group_8" data-name="Group 8">
+        <path id="Path_5" data-name="Path 5" class="cls-1" d="M30,15A15,15,0,1,0,15,30,15,15,0,0,0,30,15ZM1.363,15A13.637,13.637,0,1,1,15,28.637,13.64,13.64,0,0,1,1.363,15Z"/>
+      </g>
+    </g>
+    <g id="Group_11" data-name="Group 11" transform="translate(8.367 8.382)">
+      <g id="Group_10" data-name="Group 10">
+        <path id="Path_6" data-name="Path 6" class="cls-1" d="M173.189,171.9a1.589,1.589,0,1,0,1.589,1.589A1.588,1.588,0,0,0,173.189,171.9Z" transform="translate(-171.6 -171.9)"/>
+        <rect id="Rectangle_13" data-name="Rectangle 13" class="cls-1" width="2.739" height="8.81" transform="translate(0.222 4.378)"/>
+        <path id="Path_7" data-name="Path 7" class="cls-1" d="M271.651,256.2a2.879,2.879,0,0,0-2.591,1.421h-.035v-1.2H266.4v8.81h2.734v-4.358c0-1.15.217-2.26,1.643-2.26,1.407,0,1.421,1.313,1.421,2.334v4.284h2.734V260.4C274.938,258.026,274.425,256.2,271.651,256.2Z" transform="translate(-261.721 -252.04)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,104 @@
+// No media query necessary for xl breakpoint as it has no upper bound on its width
+
+// Large devices (desktops, less than 1200px)
+@include media-breakpoint-down(lg) {
+    @include proj-list-001--lg();
+    @include proj-list-003--lg();
+    @include inds-swiper01--lg();
+    @include proj-list-002--lg();
+
+}
+
+// Medium devices (tablets, less than 992px)
+@include media-breakpoint-down(md) {
+    @include proj-list-002--md();
+    @include inds-swiper01--md();
+    @include dif-swiper-herobanner--md();
+
+
+
+
+}
+
+@media (max-width: 1024px) {
+    @include inds-swiper01--1024();
+    @include orange-swiper02--1024();
+}
+
+@media (max-width: 768px) {
+    @include inds-swiper01--768();
+}
+
+// Small devices (landscape phones, less than 768px)
+@include media-breakpoint-down(sm) {
+    @include proj-list-001--sm();
+    @include inds-swiper01--sm();
+    @include proj-list-002--sm();
+    @include orange-myaccount--sm();
+    @include orange-myaccount--sm();
+    @include orange-swiper02--sm();
+
+
+
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-down(xs) {
+    @include dif-swiper-herobanner--xs();
+    @include proj-list-001--xs();
+    @include proj-list-002--xs();
+    @include proj-list-003--xs();
+    @include orange-comp-header--xs();
+    @include inds-swiper01--xs();
+    @include search-cont--xs();
+    @include orange-myaccount--xs();
+    @include buttons--xs();
+    @include orange-swiper02--xs();
+
+
+
+
+}
+
+//Mi  devices (portrait phones, less than 393px)
+@media (max-width: 393px) {
+
+    @include orange-swiper02--393();
+
+
+}
+
+// iOS 6 devices (portrait phones, less than 375px)
+@media (max-width: 375px) {
+    @include inds-swiper01--375();
+    @include proj-list-002--375();
+    @include orange-myaccount--375();
+    @include orange-swiper02--375();
+
+
+}
+
+// Android devices (portrait phones, less than 360px)
+@media (max-width: 360px) {
+    @include inds-swiper01--360();
+    @include proj-list-002--360();
+    @include orange-swiper02--360();
+    @include orange-myaccount--360();
+
+
+}
+
+// iOS 5 devices (portrait phones, less than 320px)
+@media (max-width: 320px) {
+    @include proj-list-001--320();
+    @include proj-list-002--320();
+    @include proj-list-003--320();
+    @include inds-swiper01--320();
+    @include orange-swiper02--320();
+    @include orange-myaccount--320();
+
+
+
+
+}

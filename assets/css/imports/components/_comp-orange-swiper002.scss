@@ -1,0 +1,198 @@
+ .orange-sw02-card {
+
+     //Card Preloader styles starts
+     .card-text {
+         min-height: 35px;
+         margin: 0px !important;
+     }
+
+     .card-title {
+         min-height: 20px;
+     }
+
+     .image-placeholder {
+         min-height: 150px;
+     }
+
+     .button-link {
+         min-height: 20px;
+         margin-top: 10px;
+     }
+
+     //Card Preloader styles starts
+
+     .card {
+
+         &:hover {
+             .img-cont {
+
+                 img {
+                     filter: grayscale(0%);
+
+                     transform: scale(1.05);
+                 }
+
+             }
+         }
+
+         //@extend %cardbox-shadow;
+         border: 0;
+         margin: 15px 0;
+
+
+         .img-cont {
+             background: url(../images/dummy-image-square.jpg) no-repeat 50% 50%;
+             background-size: cover;
+             min-height: 150px;
+             overflow: hidden;
+
+             img {
+                 @include border-radius(0px);
+                 height: 100%;
+                 object-fit: cover;
+                 transform: scale(1);
+                 transition: all .5s;
+                 filter: grayscale(75%);
+             }
+
+         }
+
+
+
+         .card-body {
+             padding: 1rem;
+
+             height: 100%;
+             background-color: $black;
+             position: relative;
+             min-height: auto;
+
+             .card-title {
+                 font-family: $heavy;
+                 margin-bottom: 10px;
+                 color: $primary;
+                 font-size: 18px;
+             }
+
+             .card-text {
+                 @include multi-Truncate(14px, 1.5, 2);
+                 margin-bottom: 10px;
+             }
+         }
+
+         .card-img-top {
+             border-radius: 0;
+         }
+
+     }
+
+
+
+ }
+
+
+
+ .orange-swiper02 {
+     position: relative;
+     padding-right: 15px;
+     padding-left: 15px;
+
+
+
+
+ }
+
+
+ //@include orange-swiper02--lg();
+ @mixin orange-swiper02--lg() {}
+
+ //@include orange-swiper02--md();
+ @mixin orange-swiper02--md() {}
+
+ //@include orange-swiper02--sm();
+ @mixin orange-swiper02--sm() {
+
+
+     .orange-swiper02 {
+         position: relative;
+         padding-right: 0px;
+         padding-left: 0px;
+
+         .card .img-cont {
+             height: 262px;
+         }
+
+         .swiper-slide {
+
+             padding-left: 7.5px;
+             padding-right: 7.5px;
+
+             &:first-child {
+
+                 padding-left: 15px;
+             }
+
+             &:last-child {
+
+                 padding-right: 15px;
+             }
+         }
+
+
+
+     }
+ }
+
+ //@include orange-swiper02--xs();
+ @mixin orange-swiper02--xs() {
+
+     .orange-swiper02 {
+         .card .img-cont {
+             height: 323px;
+         }
+     }
+ }
+
+   //@include orange-swiper02--393();
+   @mixin orange-swiper02--393() {
+
+    .orange-swiper02 {
+        .card .img-cont {
+            height: 305px;
+        }
+    }
+}
+
+  //@include orange-swiper02--375();
+  @mixin orange-swiper02--375() {
+
+    .orange-swiper02 {
+        .card .img-cont {
+            height: 290px;
+        }
+    }
+}
+
+
+  //@include orange-swiper02--360();
+  @mixin orange-swiper02--360() {
+
+    .orange-swiper02 {
+        .card .img-cont {
+            height: 277px;
+        }
+    }
+}
+
+  //@include orange-swiper02--320();
+  @mixin orange-swiper02--320() {
+
+    .orange-swiper02 {
+        .card .img-cont {
+            height: 244px;
+        }
+    }
+}
+
+ //@include orange-swiper02--1024(); 1024px
+ @mixin orange-swiper02--1024() {}

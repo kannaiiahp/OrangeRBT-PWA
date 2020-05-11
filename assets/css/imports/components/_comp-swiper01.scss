@@ -1,0 +1,212 @@
+.inds-sw01-card {
+    
+    .card {
+        border: 0;
+        margin: 15px 0;
+        cursor: pointer;
+
+        &:hover {
+            .sw01-card-imgcont {
+                color: $primary;
+
+                .sw01-card-img {
+                    transform: scale(1.05);
+
+                }
+            }
+
+            h5 {
+                color: $primary;
+            }
+        }
+
+        &.sw01-card {
+
+            //background-color: $primary;
+
+        }
+
+        .sw01-card-imgcont {
+            @include border-radius(100%);
+            overflow: hidden;
+            border: 5px solid $primary;
+            margin-bottom: 10px;
+            min-width: 193px;
+            min-height: 193px;
+            max-width: 200px;
+            max-height: 200px;
+            background: url(../images/dummy-image-square.jpg) no-repeat 50% 50%;
+            background-size: cover;
+
+            .sw01-card-img {
+                border: 5px solid $white;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: scale(1);
+                @include border-radius(50%);
+                transition: all .5s;
+
+
+            }
+        }
+
+        h5 {
+            text-align: center;
+            min-height: 24px;
+            margin: 0;
+        }
+    }
+
+
+
+}
+
+
+
+.inds-swiper01 {
+    position: relative;
+    padding-right: 15px;
+
+
+    .swiper-slide {
+
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+
+        &:first-child {
+            padding-left: 15px;
+            padding-right: 0;
+        }
+
+        &:last-child {
+            padding-left: 0;
+            padding-right: 15px;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+//---------------
+//Media Queries
+//---------------
+
+//@include inds-swiper01--lg(); 1200px
+@mixin inds-swiper01--lg() {
+    .inds-sw01-card {
+        .card {
+            .sw01-card-imgcont {
+
+                min-width: 160px;
+                min-height: 160px;
+
+            }
+        }
+    }
+}
+
+//@include inds-swiper01--1024(); 1024px
+@mixin inds-swiper01--1024() {
+
+    .inds-swiper01 {
+       
+        padding-right: 0px;
+    }
+}
+
+
+//@include inds-swiper01--md(); 992px
+@mixin inds-swiper01--md() {
+    .inds-sw01-card {
+        .card {
+            .sw01-card-imgcont {
+
+                min-width: 145px;
+                min-height: 145px;
+
+            }
+        }
+    }
+}
+//@include inds-swiper01--768(); 768px
+@mixin inds-swiper01--768() {
+
+    
+}
+
+//@include inds-swiper01--sm(); 768px
+@mixin inds-swiper01--sm() {
+    .inds-sw01-card {
+        .card {
+            .sw01-card-imgcont {
+
+                min-width: 138px;
+                min-height: 138px;
+
+            }
+        }
+    }
+}
+
+//@include inds-swiper01--xs(); 576px
+@mixin inds-swiper01--xs() {
+    .inds-sw01-card {
+        .card {
+            .sw01-card-imgcont {
+
+                min-width: 90px;
+                min-height: 90px;
+
+
+            }
+        }
+    }
+}
+
+//@include inds-swiper01--xs(); 375px
+@mixin inds-swiper01--375() {
+    .inds-sw01-card {
+        .card {
+            .sw01-card-imgcont {
+
+                min-width: 91px;
+                min-height: 91px;
+
+            }
+        }
+    }
+}
+
+//@include inds-swiper01--360(); 360px
+@mixin inds-swiper01--360() {
+    .inds-sw01-card {
+        .card {
+            .sw01-card-imgcont {
+
+                min-width: 87px;
+                min-height: 87px;
+
+            }
+        }
+    }
+}
+
+//@include inds-swiper01--320(); 320px
+@mixin inds-swiper01--320() {
+    .inds-sw01-card {
+        .card {
+            .sw01-card-imgcont {
+
+                min-width: 110px;
+                min-height: 110px;
+
+            }
+        }
+    }
+}

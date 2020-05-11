@@ -1,0 +1,166 @@
+// GLOBAL VARIABLES
+
+/* Indosat Selfcare Styles  */
+
+
+@font-face {
+    font-family: 'HelveticaNeue-Regular';
+    src: url('fonts/HelveticaNeue-Regular.eot');
+    src: url('fonts/HelveticaNeue-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/HelveticaNeue-Regular.woff') format('woff'), url('fonts/HelveticaNeue-Regular.ttf') format('truetype'), url('fonts/HelveticaNeue-Regular.svg#noto_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'HelveticaNeue-Bold';
+    src: url('fonts/HelveticaNeue-Bold.eot');
+    src: url('fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/HelveticaNeue-Bold.woff') format('woff'), url('fonts/HelveticaNeue-Bold.ttf') format('truetype'), url('fonts/HelveticaNeue-Bold.svg#noto_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+// /* Font family*/
+
+$bolder:'HelveticaNeue-Bold';
+$regular:'HelveticaNeue-Regular';
+
+
+$logotext: 'Righteous';
+
+
+
+
+$noto-light:'HelveticaNeue-Regular';
+$noto-regular:'HelveticaNeue-Regular';
+$noto-bold:'HelveticaNeue-Bold';
+$heavy:'HelveticaNeue-Bold';
+
+
+
+$primary:#FF7900;
+$secondary:#000000;
+$success:#b0e01f;
+$danger:#ed2324;
+$info:#2dd5c4;
+$warning:#ffee93;
+$light:#8F8F8F;
+$dark:#707070;
+
+
+
+$orange:#FF7900;
+$blue:#2dcef3;
+$black:#000000;
+$verylight:#aaaaaa;
+$yellow : #ffdb00;
+
+
+/*content loader kanna*/
+$background: #f6f7f8;
+$grey-nuance-lighter: #eeeeee;
+$grey-nuance-darker: #dddddd;
+$fade-grey: #e8e8e8;
+
+.text-verylight {
+    color: $verylight !important;
+}
+
+.bg-verylight {
+    background-color: $verylight !important;
+}
+
+.text-blue {
+    color: $blue !important;
+}
+
+.bg-blue {
+    background-color: $blue !important;
+}
+
+.text-orange {
+    color: $orange !important;
+}
+
+.bg-orange {
+    background-color: $orange !important;
+}
+
+
+
+$card-spacer-y: .0rem;
+
+
+
+
+
+
+
+//Reset Focus
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.button-link {
+    font-family: $heavy;
+    color: $primary;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+
+    &:hover {
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+.button-link:not([href]) {
+    color: $primary;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $black;
+        text-decoration: none;
+    }
+}
+
+
+$headings-font-family:   $bolder;
+
+
+
+
+
+
+
+
+
+
+
+//Kannaiah starts
+
+$card-pading:1rem 0.425rem;
+$fixedColSize:4%;
+$fixedColSize01:20%;
+$fixedColSize02:20%;
+$floatleft:left;
+
+.orange-bg-gradient {
+    background-image: linear-gradient(to right, #ffa201, #ffc96b);
+}
+
+.red-bg-gradient {
+    background-image: linear-gradient(to right, #ed2324, #fa4b4b);
+}
+
+//Kannaiah ends

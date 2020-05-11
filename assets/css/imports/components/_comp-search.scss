@@ -1,0 +1,201 @@
+.search-cont {
+    background: $primary;
+    padding: 15px 0;
+    margin-top: 58px;
+
+    .search-input-cont {
+        position: relative;
+    }
+
+    .form-group {
+        position: relative;
+        margin-bottom: 0;
+    }
+
+    .form-control {
+        border-radius: 0;
+        background: #FF9B406B;
+        border: 2px solid #FF9B406B;
+        color: $white;
+        font-family: $bolder;
+        padding-right: 48px;
+        font-size: 1rem;
+
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+            font-family: $regular;
+        }
+
+        &:focus {
+            border: 2px solid $white;
+            background: $primary;
+
+
+        }
+    }
+
+
+
+    a {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+
+        img {
+            width: 42px;
+            padding: 10px;
+        }
+    }
+
+
+    .searchtype {
+        margin-bottom: 15px;
+    }
+
+
+
+    .searchtype [type="radio"]:checked,
+    [type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+
+    .searchtype [type="radio"]:checked+label,
+    .searchtype [type="radio"]:not(:checked)+label {
+        position: relative;
+        padding-left: 28px;
+        cursor: pointer;
+        line-height: 20px;
+        display: inline-block;
+        color: $black;
+    }
+
+    .searchtype [type="radio"]:checked+label:before,
+    .searchtype [type="radio"]:not(:checked)+label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid $black;
+        border-radius: 100%;
+        background: transparent;
+    }
+
+    .searchtype [type="radio"]:checked+label:after,
+    .searchtype [type="radio"]:not(:checked)+label:after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: $black;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        border-radius: 100%;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+
+    .searchtype [type="radio"]:not(:checked)+label:after {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    .searchtype [type="radio"]:checked+label:after {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+.search-res-cont {
+    overflow-y: scroll;
+    height: calc(100vh - 290px);
+    
+}
+
+.trending-cont {
+    margin-top: -15px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    padding: 10px 0;
+    margin-bottom: 15px;
+
+    .trend-heading {
+        color: $primary;
+       
+        margin: 0;
+    }
+
+    .keywords-cont {
+        width: 100%;
+        white-space: nowrap;
+        padding: 5px 0 5px 5px;
+        overflow-x: auto;
+        ul {
+            padding: 0; margin: 0;
+            li {
+                list-style: none;
+                display: inline;
+
+                a {
+                    font-size: 14px;
+                    font-family: $regular;
+                    padding: 5px 10px;
+                    box-shadow: 0 1px 4px 0 rgba(32, 33, 36, .20);
+                    border-radius: 5px;
+                    display: inline-block;
+                    color: $black;
+                    margin-right: 5px;
+                    &:hover{
+                        color: $black;
+                        text-decoration: none!important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//---------------
+//Media Queries
+//---------------
+
+//@include search-cont--lg();
+@mixin search-cont--lg() {}
+
+//@include search-cont--md();
+@mixin search-cont--md() {}
+
+//@include search-cont--sm();
+@mixin search-cont--sm() {}
+
+//@include search-cont--xs();
+@mixin search-cont--xs() {
+
+    .search-cont {
+        padding: 10px 0;
+
+        .form-control {
+            font-size: 14px;
+        }
+
+        a img {
+            width: 34px;
+            padding: 6px;
+        }
+
+        .searchtype {
+            margin-bottom: 10px;
+        }
+    }
+
+    .search-cont .searchtype [type="radio"]:checked+label,
+    .search-cont .searchtype [type="radio"]:not(:checked)+label {
+        font-size: 14px;
+    }
+
+}

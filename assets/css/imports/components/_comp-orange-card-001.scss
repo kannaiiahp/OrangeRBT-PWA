@@ -1,0 +1,118 @@
+
+
+
+ .orange-card001 {
+
+
+     //Card Preloader styles starts
+
+     .card {
+
+         border: 0;
+
+         img {
+
+             height: 200px;
+             object-fit: cover;
+         }
+
+         .card-body {
+             padding: 15px;
+             display: flex;
+             justify-content: space-between;
+             flex-direction: row;
+             height: 100%;
+             background-color: $black;
+             position: relative;
+             min-height: 100px;
+             align-items: center;
+
+             h5 {
+                 width: calc(100% - 64px);
+                 margin-bottom: 10px;
+                 color: $primary;
+                 font-size: 18px;
+             }
+
+             .info-cont {
+                 display: flex;
+                 flex-flow: column wrap;
+                 flex: 1;
+                 align-items: start;
+             }
+
+             /* .btn-card {
+                 background-color: #000000;
+                 border: 2px solid #ffffff;
+                 width: 100px;
+                 border-radius: 0;
+                 color: #fff;
+                 font-size: 18px;
+                 padding: 0;
+                 height: 33px;
+             } */
+
+             .play-video {
+
+                 background: #707070;
+                 border-radius: 50px;
+                 padding: 10px;
+                 width: 64px;
+                 height: 64px;
+
+                 img {
+                     width: 44px;
+                     height: 44px;
+                 }
+             }
+
+             .card-text {
+
+                 margin-bottom: 10px;
+             }
+
+
+
+
+             #player-container #play-pause {
+                 cursor: pointer;
+                 text-indent: -999999px;
+                 height: 50px;
+                 width: 50px;
+                 /* background: #eb01a5; */
+                 background-image: url('../images/play.svg');
+                 background-repeat: no-repeat;
+                 background-position: center;
+                 background-size: 100%;
+                 border: 1px solid $white;
+                 border-radius: 100%;
+                
+                 &:hover{
+                    background-image: url('../images/play_org.svg');
+                    border: 1px solid $primary;
+                   
+                 }
+             }
+
+             .play {
+                 background-image: url('../images/play.svg');
+             }
+
+             .pause {
+                 background-image: url('../images/pause.gif') !important;
+                 background-size: 200px !important;
+             }
+
+
+
+         }
+
+         .card-img-top {
+             border-radius: 0;
+         }
+
+     }
+
+
+
+ }

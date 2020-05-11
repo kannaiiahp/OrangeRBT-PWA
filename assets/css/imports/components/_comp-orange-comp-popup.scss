@@ -1,0 +1,82 @@
+
+    .modal {
+        
+        .modal-dialog {
+            /* -webkit-transform: translate(0, -50%);
+            -o-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            top: 50%; */
+
+            .modal-content {
+                .modal-header {
+                    .modal-title {
+                        color: $primary;
+                        font-size: 16px;
+                        display: block;
+                        text-align: center;
+                        margin-top:0;
+                        padding:0;
+                        width: 100%;
+
+                    }
+                }
+
+                .modal-body {
+                    form {
+                        input::placeholder{
+                            font-family: $regular!important;
+                        }
+                        .form-group {
+                            label {
+                                font-size: 16px;
+
+                                &.label-regular {
+                                    font-size: 14px !important;
+                                }
+                            }
+
+                            .form-control {
+                                border-color: #999999;
+                                font-size: 14px;
+                                color: $black;
+                                border-radius: 0;
+                            }
+
+                            select {
+                                color: #999999 !important;
+
+                            }
+                        }
+                    }
+                }
+
+                .modal-footer {
+                    margin: 0;
+                    padding: 0 1rem 1rem;
+                    border: 0;
+                    text-align: center;
+                    display: block;
+
+                    .request-pin {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        font-size: 12px;
+                        color: $black;
+                        text-decoration: underline;
+
+                    }
+                }
+            }
+            .textcont{
+                p{
+                    margin: 0;
+                }
+            }
+            .mboxtbl td, .mboxtbl th {
+                padding: .5rem;
+                padding-left: 0;
+                border-bottom: 1px solid #dee2e6;
+            }
+        }
+    }

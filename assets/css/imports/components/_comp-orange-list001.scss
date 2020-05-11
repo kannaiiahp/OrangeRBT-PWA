@@ -1,0 +1,334 @@
+.proj-list-001 {
+    margin-bottom: 15px;
+
+    .card {
+        @extend %cardbox-shadow;
+        border: 0;
+
+
+        .card-body {
+            padding: 1rem;
+
+            .card-title {
+                font-family: $heavy;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+
+            .toplist-section {
+                .toplist-header {
+                    position: relative;
+                    padding: 15px 0px;
+
+                    h2 {
+                        font-size: 20px;
+                        display: inline-block;
+                    }
+
+                    .btn-plus {
+                        background-color: #ffffff;
+                        border: 2px solid #000000;
+                        min-width: 80px;
+                        border-radius: 0;
+                        color: #000;
+                        font-size: 18px;
+                        padding: 0;
+                        position: absolute;
+                        right: 20px;
+                    }
+                }
+
+                ul.toplist-row {
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-flow: row wrap;
+
+                    li {
+                        display: flex;
+                        flex: 0 0 31%;
+                        list-style: none;
+                        position: relative;
+                        border-bottom: 1px solid #dddddd;
+                        padding: 15px 0;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .img-toplist {
+                            display: inline-block;
+                            vertical-align: top;
+                            margin-right: 10px;
+                            width: 80px;
+                            height: 80px;
+                            @include border-radius(50%);
+                            background-color: $light;
+                            background: url(../images/dummy-image-square-small.jpg) no-repeat 50% 50%;
+                            position: relative;
+                            overflow: hidden;
+
+                            &:hover{
+
+                                img{
+                                    transform: scale(1.1);
+                                transition: all .5s;
+                                }
+                            }
+
+                            img {
+                                width: 80px;
+                                height: 80px;
+                                @include border-radius(50%);
+                                object-fit: cover;
+                                transform: scale(1);
+                                transition: all .5s;
+
+
+                            }
+                        }
+
+                        .toplist-text {
+                            display: flex;
+                            min-height: 100px;
+                            flex-flow: column wrap;
+
+
+
+                            h4 {
+                                margin: 0;
+                                width: 240px;
+                                margin-bottom: 5px;
+
+
+                            }
+
+                            p {
+                                font-family: $regular;
+                                font-size: 16px;
+                                color: $light;
+                                margin: 0;
+                                padding: 0;
+                                height: 20px;
+                                min-width: 100px;
+                                line-height: 20px;
+                                margin-bottom: 10px;
+                            }
+
+                            img {
+                                /* position: absolute;
+                                width: 30px;
+                                height: 30px;
+                                right: -12px;
+                                top: 0; */
+                                /* width: 24px; height: 24px; margin-right: 10px; */
+                            }
+                            img.setrbt{
+
+                            }
+
+                            .toplist-button {
+                                margin-top: auto;
+                                display: block;
+
+                                .listen-btn {
+                                    min-width: 80px;
+                                }
+
+                                .download-btn {}
+                            }
+                        }
+
+                        position: relative;
+
+
+                        /* Player */
+                        #player-container1 {
+                            position: absolute;
+                            left: 0px;
+                            right: 0px;
+                            background-color: rgba(0, 0, 0, 0.25);
+                            top: 0;
+                            bottom: 0;
+                            margin: calc(50% - 20px);
+                            z-index: 1;
+
+                        }
+
+                        #player-container1 #play-pause1 {
+                            cursor: pointer;
+                            text-indent: -999999px;
+                            height: 40px;
+                            width: 40px;
+                            /* background: #eb01a5; */
+                            background-image: url('../images/play.svg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 100%;
+                            border: 0px solid #fff;
+                            border-radius: 100%;
+                            &:hover{
+                                background-image: url('../images/play_org.svg');
+                                //border: 1px solid $primary;
+                               
+                             }
+
+                        }
+
+                        .play1 {
+                            background-image: url('../images/play.svg');
+                        }
+
+                        .pause1 {
+                            background-image: url('../images/pause.gif') !important;
+                            background-size: 150px !important;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+//---------------
+//Media Queries
+//---------------
+
+//@include proj-list-001--lg(); 1200px
+@mixin proj-list-001--lg() {
+    .proj-list-001 {
+        .card {
+            .card-body {
+                .toplist-section {
+                    ul.toplist-row {
+                        li {
+                            flex: 0 0 48%;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+}
+
+//@include proj-list-001--md(); 992px
+@mixin proj-list-001--md() {}
+
+//@include proj-list-001--sm(); 768px
+@mixin proj-list-001--sm() {
+    .proj-list-001 {
+        .card {
+            .card-body {
+                .toplist-section {
+                    ul.toplist-row {
+                        li {
+                            flex: 0 0 50%;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+}
+
+//@include proj-list-001--xs(); 576px
+@mixin proj-list-001--xs() {
+    .proj-list-001 .card .card-body .toplist-section ul.toplist-row li .toplist-text{
+
+    }
+    .proj-list-001 {
+        .card {
+            .card-body {
+                .toplist-section {
+                    ul.toplist-row {
+                        li {
+                            flex: 0 0 100%;
+                            .toplist-text{
+                                min-height: 80px;
+                                //h4{width: 100%;}
+        
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+}
+
+//@include proj-list-001--375(); 375px
+@mixin proj-list-001--375() {}
+
+//@include proj-list-001--360(); 360px
+@mixin proj-list-001--360() {}
+
+//@include proj-list-001--320(); 320px
+@mixin proj-list-001--320() {
+    .proj-list-001 {
+        .card {
+            .card-body {
+                .toplist-section {
+                    ul.toplist-row {
+                        li {
+                            .toplist-text h4 {
+
+                                width: 215px;
+                            }
+
+                            .img-toplist {
+
+                                width: 65px;
+                                height: 65px;
+                            }
+
+                            .img-toplist img {
+                                width: 65px;
+                                height: 65px;
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}

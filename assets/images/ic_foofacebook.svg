@@ -1,0 +1,13 @@
+<svg id="facebook-logo-in-circular-button-outlined-social-symbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_7" data-name="Group 7">
+    <path id="Path_3" data-name="Path 3" class="cls-1" d="M30,15A15,15,0,1,0,15,30,15,15,0,0,0,30,15ZM1.363,15A13.637,13.637,0,1,1,15,28.637,13.64,13.64,0,0,1,1.363,15Z"/>
+    <path id="Path_4" data-name="Path 4" class="cls-1" d="M228.339,147.2v-8.613h2.877l.454-2.853h-3.331V134.3c0-.746.247-1.453,1.328-1.453h2.162V130h-3.07c-2.581,0-3.287,1.678-3.287,4.009v1.727H223.7v2.848h1.772V147.2Z" transform="translate(-212.762 -123.584)"/>
+  </g>
+</svg>

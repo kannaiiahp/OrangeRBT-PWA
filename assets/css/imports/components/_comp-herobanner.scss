@@ -1,0 +1,179 @@
+//Design Team Internal Framework (DIF) - dif-swiper-herobanner
+
+.herobanner-cont {
+    position: relative;
+
+    //min-height: 300px;
+    background-color: $black;
+
+    .dif-swiper-herobanner {
+
+        .ban-img-cont {
+            //height: 300px;
+            background-color: $primary;
+            background: url(../images/dummy-image-square.jpg) no-repeat 50% 50%;
+            background-size: cover;
+            position: relative;
+
+
+
+            #player-container {
+                position: absolute;
+                left: 0px;
+                right: 0px;
+                background-color: rgba(0, 0, 0, 0.25);
+                top: 0;
+                bottom: 0;
+                padding: 20px;
+                z-index: 1;
+
+                #play-pause {
+                    cursor: pointer;
+                    text-indent: -999999px;
+                    height: 50px;
+                    width: 50px;
+                    /* background: #eb01a5; */
+                    background-image: url('../images/play.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 100%;
+                    border: 1px solid $white;
+                    border-radius: 100%;
+                    margin: calc(50% - 25px) auto;
+
+                    &:hover {
+                        background-image: url('../images/play_org.svg');
+                        border: 1px solid $primary;
+
+                    }
+                }
+            }
+
+            .play {
+                background-image: url('../images/play.svg');
+            }
+
+            .pause {
+                background-image: url('../images/pause.gif') !important;
+                background-size: 200px !important;
+                &:hover {
+                    border:1px solid #fff!important;
+                   
+                }
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+            .web-banner {
+                display: block;
+            }
+
+            .mob-banner {
+                display: none;
+            }
+        }
+
+        .swiper-pagination {
+            bottom: 110px;
+            display: none;
+
+        }
+
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            border-radius: 100%;
+            background: $white;
+            opacity: .5;
+            margin-left: 10px;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: $primary;
+        }
+
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: $primary;
+        padding: 10px;
+        background-size: 22px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        transition: all .5s;
+        display: block;
+
+        &:hover {
+            background-size: 26px;
+            transition: all .5s;
+
+        }
+
+    }
+
+    .swiper-button-prev,
+    .swiper-container-rtl .swiper-button-next {
+        background-image: url(../images/banner-left-arrow.svg);
+        left: 10px;
+        right: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-container-rtl .swiper-button-prev {
+        background-image: url(../images/banner-right-arrow.svg);
+        right: 10px;
+        left: auto;
+    }
+}
+
+//---------------
+//Media Queries
+//---------------
+
+//@include dif-swiper-herobanner--lg();
+@mixin dif-swiper-herobanner--lg() {}
+
+//@include dif-swiper-herobanner--md();
+@mixin dif-swiper-herobanner--md() {
+
+    .herobanner-cont .swiper-button-next,
+    .herobanner-cont .swiper-button-prev {
+        display: none;
+    }
+
+    .herobanner-cont .dif-swiper-herobanner .swiper-pagination {
+        bottom: 110px;
+        display: block;
+    }
+}
+
+//@include dif-swiper-herobanner--sm();
+@mixin dif-swiper-herobanner--sm() {}
+
+//@include dif-swiper-herobanner--xs();
+@mixin dif-swiper-herobanner--xs() {
+
+    .herobanner-cont .dif-swiper-herobanner .ban-img-cont {
+        min-height: 200px;
+    }
+
+
+    .herobanner-cont .dif-swiper-herobanner .ban-img-cont .mob-banner {
+        display: block;
+    }
+
+    .herobanner-cont .dif-swiper-herobanner .ban-img-cont .web-banner {
+        display: none;
+    }
+
+}

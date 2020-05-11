@@ -1,0 +1,57 @@
+// Design Team Internal Framework (DIF)  -- Variables
+// ***Custom Variables should be in first position, Before the bootstrap SCSS
+@import "imports/dif-variables";
+
+
+
+/* --  Bootstrap CSS V 4.4 -- */
+@import "imports/vendors/bootstrap.min";
+
+
+
+// Design Team Internal Framework (DIF)  -- Mixins
+@import "imports/dif-mixins";
+// Design Team Internal Framework (DIF)  -- Functions
+@import "imports/dif-functions";
+// Design Team Internal Framework (DIF)  -- Buttons
+@import "imports/dif-buttons";
+// Design Team Internal Framework (DIF)  -- Buttons
+@import "imports/global";
+
+
+
+
+/* Component herobanner swiper - Card */
+
+
+@import "imports/components/comp-herobanner";
+@import "imports/components/comp-heroban-sup";
+@import "imports/components/comp-orange-comp-header";
+
+@import "imports/components/comp-search";
+
+
+/* Component herobanner swiper - Card */
+@import "imports/components/comp-swiper01";
+
+@import "imports/components/comp-orange-card-001";
+@import "imports/components/comp-orange-list001";
+@import "imports/components/comp-orange-swiper002";
+@import "imports/components/comp-orange-cardlist-002";
+@import "imports/components/comp-orange-cardlist-003";
+
+@import "imports/components/comp-orange-comp-myaccount";
+@import "imports/components/comp-orange-comp-popup";
+
+
+@import "imports/components/comp-content-loader";
+
+
+
+
+
+// Design Team Internal Framework (DIF)  -- Buttons
+@import "imports/dif-media-queries";
+
+
+
