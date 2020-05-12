@@ -27,15 +27,16 @@
 
     <div class="wrapper">
         <div class="back-nav-cont ">
-            <div class="container">
+            <div class="container-xl">
                 <div class="back-nav">
                     <a href="index.html">
-                    <img src="assets/images/awesome-arrow-right.svg" alt="back">
-                </a>
+                        <img src="assets/images/awesome-arrow-right.svg" alt="back">
+                    </a>
                     <h2>Top Oriental</h2>
                 </div>
             </div>
         </div>
+        <div class="spacer-15"></div>
 
 
 
@@ -404,7 +405,7 @@
             </section>
 
 
-            <h2 >Similar Categories</h2>
+            <h2>Similar Categories</h2>
             <div class="row-15">
                 <section class="orange-swiper02 wow fadeIn">
                     <!-- Swiper -->
@@ -485,74 +486,74 @@
 
 
 
-<!-- Modal prayer rbt Modal -->
-<div class="modal fade" id="setrbtModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Set as RBT</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            
-            <table class="table mboxtbl">		  
-            <tbody>
-              <tr>
-                <td>
-                    <div class="textcont">				  	 
-                        <p class="atle">Song: Cold Shoulder</p>
+    <!-- Modal prayer rbt Modal -->
+    <div class="modal fade" id="setrbtModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Set as RBT</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <table class="table mboxtbl">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="textcont">
+                                        <p class="atle">Song: <span class=""> Shoulder</span></p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="textcont">
+                                        <p class="atle">Song Price: <span class="">0.20 JD</span></p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="textcont">
+                                        <p class="atle">Song Validity: <span class="">7 days</span></p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                    <p class="headtext text-center text-primary">Select required action from below list</p>
+
+                    <div class="btn-container text-center setrbt-btncont">
+                        <a href="#" class="btn btn-secondary mb-2 mr-2">Tous les appelants</a>
+                        <a href="#" class="btn btn-secondary mb-2 mr-2">Appelant spécial</a>
+                        <a href="#" class="btn btn-secondary mb-2 mr-2">Group</a>
+                        <a href="#" class="btn btn-secondary mb-2 mr-2">Cadeau</a>
+
                     </div>
-                </td>
-              </tr>
-                
-                <tr>
-                <td>
-                    <div class="textcont">				  	 
-                        <p class="atle">Song Price: 0.20 JD</p>
-                    </div>
-                </td>
-              </tr>
-                
-                <tr>
-                <td>
-                    <div class="textcont">				  	 
-                        <p class="atle">Song Validity: 7 days</p>
-                    </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-            
-            
-            
-            <p class="headtext">Select required action from below list</p>
-            
-            <div class="btn-container text-center">
-                <a href="#" class="btn btn-secondary mb-2 mr-2">All Callers</a>
-                <a href="#" class="btn btn-secondary mb-2 mr-2">Special Caller</a>
-                <a href="addtogroup.html" class="btn btn-secondary mb-2 mr-2">Group</a>
-                <a href="#" class="btn btn-secondary mb-2 mr-2">Special Caller</a>
-                <a href="Specialrbt.html" class="btn btn-secondary mb-2 mr-2">Special Caller</a>
-                          
-          </div>
-          
+
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                    <!--<button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#prayerrbtModal">Confirm</button>-->
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-          <!--<button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#prayerrbtModal">Confirm</button>-->
-        </div>
-      </div>
     </div>
-  </div>
-  <!-- Modal prayer rbt Modal -->
+    <!-- Modal prayer rbt Modal -->
 
 
-</section>
-</div>
-</div>
-<!-- OTP Model---->
+    </section>
+    </div>
+    </div>
+    <!-- OTP Model---->
 
 
 
@@ -570,6 +571,25 @@
 
 
     <script>
+
+        var track = document.getElementById('track');
+        var controlBtn = document.getElementById('play-pause');
+        function playPause() {
+            if (track.paused) {
+                track.play();
+                //controlBtn.textContent = "Pause";
+                controlBtn.className = "pause";
+            } else {
+                track.pause();
+                //controlBtn.textContent = "Play";
+                controlBtn.className = "play";
+            }
+        }
+
+        controlBtn.addEventListener("click", playPause);
+        track.addEventListener("ended", function () {
+            controlBtn.className = "play";
+        });
 
 
 

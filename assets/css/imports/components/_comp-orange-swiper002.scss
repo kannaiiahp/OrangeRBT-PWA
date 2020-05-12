@@ -22,6 +22,7 @@
      //Card Preloader styles starts
 
      .card {
+        
 
          &:hover {
              .img-cont {
@@ -43,7 +44,7 @@
          .img-cont {
              background: url(../images/dummy-image-square.jpg) no-repeat 50% 50%;
              background-size: cover;
-             min-height: 150px;
+             min-height: 200px;
              overflow: hidden;
 
              img {
