@@ -69,22 +69,7 @@
     padding-right: 15px;
 
 
-    .swiper-slide {
-
-        padding-left: 7.5px;
-        padding-right: 7.5px;
-
-        &:first-child {
-            padding-left: 15px;
-            padding-right: 0;
-        }
-
-        &:last-child {
-            padding-left: 0;
-            padding-right: 15px;
-        }
-
-    }
+    
 
 }
 
@@ -117,6 +102,22 @@
     .inds-swiper01 {
        
         padding-right: 0px;
+        .swiper-slide {
+
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+    
+            &:first-child {
+                padding-left: 15px;
+                padding-right: 0;
+            }
+    
+            &:last-child {
+                padding-left: 0;
+                padding-right: 15px;
+            }
+    
+        }
     }
 }
 
@@ -136,6 +137,8 @@
 }
 //@include inds-swiper01--768(); 768px
 @mixin inds-swiper01--768() {
+
+    
 
     
 }

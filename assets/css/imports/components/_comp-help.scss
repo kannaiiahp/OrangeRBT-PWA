@@ -1,0 +1,71 @@
+
+.faq_wrapper{
+
+}
+.faq_wrapper .card{
+	margin-bottom: 15px;text-align: left;
+	border-radius: 0px;
+}
+.faq_wrapper .card > .card-header{
+	background: none;
+	padding: 0px;
+	border-bottom: 0px;
+}
+.faq_wrapper .card > .card-header button{
+	background: none;
+	border:0px;
+	padding: .75rem 1.25rem;
+	display: block;
+	width: 100%;
+	text-align: left;
+	font-size: 1rem;
+	color: #000;
+	text-decoration: none;
+	position:relative;
+}
+/* .faq_wrapper .card > .card-header button.collapsed::before{
+	position:absolute;
+	content: "\f106"; 
+	font-family: 'FontAwesome';
+	
+	top: 10px;
+	right: 15px;
+	font-size: 18px;
+	color: #333;
+}
+.faq_wrapper .card > .card-header button:before{
+	position:absolute;
+	content: "\f078"; 
+	font-family: "Font Awesome 5 Free";
+	top: 10px;
+	right: 15px;
+	font-size: 18px;
+	color: #333;
+} */
+.faq_wrapper .card >.collapse{
+	text-align: left;
+	
+}
+.help_container .nav-tabs .nav-item {
+	margin-bottom: 0px;
+}
+.help_container .nav-tabs .nav-item .nav-link{
+	border: 0px;
+}
+.help_container .nav-tabs .nav-item.show .nav-link,.help_container .nav-tabs .nav-link.active,.help_container .nav-tabs .nav-link.active:hover{
+	border: 0px;
+	border-bottom: 3px solid #ff7900;
+}
+.help_container .nav-tabs .nav-link:hover{
+	border: 0px;
+	border-bottom: 2px solid transparent;
+	margin: 0px;
+}
+.help_container .tab-content{
+	text-align: left;
+	padding: 20px 15px;
+}
+.help_heading{
+	font-size: 1rem;
+	color: #000;
+}

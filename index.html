@@ -79,7 +79,7 @@
                                     src="assets/images/user.svg"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="noselect nav-link" href="#"><img src="assets/images/Union 1.svg"></a>
+                            <a class="noselect nav-link" href="help.html"><img src="assets/images/Union 1.svg"></a>
                         </li>
                         <li class="nav-item">
                             <a class="noselect nav-link" href="#"><img src="assets/images/ic_headlogout.svg"></a>
@@ -151,7 +151,7 @@
                                         <h6 class="price-text">2.5 TND</h6>
                                     </div>
                                     <div class="data-btn-cont">
-                                        <a href="#" class="btn btn-outline-white">Activer</a>
+                                        <a href="#" class="btn btn-outline-white"  data-toggle="modal" data-target="#setrbtModal">Activer</a>
                                     </div>
                                 </div>
                             </div>
@@ -740,7 +740,7 @@
             <div class="search_sec">
                 <div id="myNav" class="proj-overlay">
 
-                    <div class="back-nav-cont ">
+                    <div class="back-nav-cont mb-20 ">
                         <div class="container-xl">
                             <div class="back-nav">
 
@@ -1838,12 +1838,16 @@
                             <input type="number" class="form-control" id="exampleInputEmail2"
                                 aria-describedby="emailHelp" placeholder="502xxxxxx">
                         </div>
+
+                        <div class="btn-cont-form text-center pt-2">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal"
+                        data-target="#otp2modal">demander</button>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal"
-                        data-target="#otp2modal">demander</button>
+                    
                 </div>
             </div>
         </div>
@@ -1866,8 +1870,8 @@
                     <form>
                         <div class="form-group">
                             <label class="label-regular" for="exampleInputEmail1">Code PIN</label>
-                            <input type="number" class="form-control" id="exampleInputEmail2"
-                                aria-describedby="emailHelp" placeholder="* * * *">
+                            <input type="password" class="form-control" id="exampleInputEmail2"
+                                aria-describedby="emailHelp" placeholder="....">
                         </div>
                     </form>
                 </div>
@@ -1878,6 +1882,69 @@
             </div>
         </div>
     </div>
+
+      <!-- Modal prayer rbt Modal -->
+      <div class="modal fade" id="setrbtModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Set as RBT</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+
+                  <table class="table mboxtbl">
+                      <tbody>
+                          <tr>
+                              <td>
+                                  <div class="textcont">
+                                      <p class="atle">Song: <span class=""> Shoulder</span></p>
+                                  </div>
+                              </td>
+                          </tr>
+
+                          <tr>
+                              <td>
+                                  <div class="textcont">
+                                      <p class="atle">Song Price: <span class="">0.20 JD</span></p>
+                                  </div>
+                              </td>
+                          </tr>
+
+                          <tr>
+                              <td>
+                                  <div class="textcont">
+                                      <p class="atle">Song Validity: <span class="">7 days</span></p>
+                                  </div>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+
+
+
+                  <p class="headtext text-center text-primary">Select required action from below list</p>
+
+                  <div class="btn-container text-center setrbt-btncont">
+                      <a href="#" class="btn btn-secondary mb-2 mr-2">Tous les appelants</a>
+                      <a href="#" class="btn btn-secondary mb-2 mr-2">Appelant spécial</a>
+                      <a href="#" class="btn btn-secondary mb-2 mr-2">Group</a>
+                      <a href="#" class="btn btn-secondary mb-2 mr-2">Cadeau</a>
+
+                  </div>
+
+              </div>
+              <div class="modal-footer">
+                  <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+                  <!--<button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#prayerrbtModal">Confirm</button>-->
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Modal prayer rbt Modal -->
 
 
 
@@ -1896,8 +1963,7 @@
 
     <!-- jQuery wow CDN -->
     <script src="assets/js/wow.min.js"></script>
-    <!-- jQuery wow CDN -->
-    <script src="assets/js/mCustomScrollbar.concat.min.js"></script>
+  
 
 
     <script type="text/javascript" src="assets/js/custom.js"></script>

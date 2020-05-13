@@ -1,40 +1,52 @@
  .orange-myaccount {
-     input::placeholder{
+     input::placeholder {
          font-family: $regular;
      }
+     select {
+        font-family: $regular;
+      }
+
      .org-myacc {
          .org-container {
              .myacc {
                  .nav-myacc {
-                    .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-                        border-color: #fff #fff #fff;
-                        border-bottom: 1px solid #dee2e6;
-                    }
-                    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-                        color: #495057;
-                        background-color: #fff;
-                        border-color: #fff #fff #fff;
-                    }
-                    .nav-tabs {
-                        border-bottom: 1px solid #dee2e6;
-                    }
+                     background-color: $primary;
+
+                     /* .nav-tabs .nav-link:hover,
+                     .nav-tabs .nav-link:focus {}
+
+                     .nav-tabs .nav-link.active,
+                     .nav-tabs .nav-item.show .nav-link {} */
+
                      .nav-tabs {
-                         margin-bottom: 24px;
-                         padding: 0 15px;
-                        
+                         border-bottom: 1px solid $black;
+                         margin-bottom: 0px;
+                         padding: 0px;
+
+                         .nav-link {
+                             border-radius: 0;
+                             border: 0;
+                         }
+
 
                          .nav-item {
                              color: $black;
                              font-size: 18px;
                              padding: 8px 8px;
-                            
+                             margin-right:10px;
 
-                             &.active {
+
+                             &.active,
+                             &:hover {
                                  //border: 0;
-                                 border-bottom: 3px solid $primary;
+                                 border-bottom: 3px solid $white;
+                                 background-color: transparent;
+                                 color: $white;
                              }
                          }
                      }
+
+
 
                  }
 
@@ -51,15 +63,16 @@
                                          border: 2px solid $black;
                                          font-size: 16px;
                                          padding: 5px 10px;
-                                         margin: 0 5px;
-                                        
+                                         margin: 0 10px 0 0;
 
-                                         &.active {
+
+                                         &.active,
+                                         &:hover {
                                              background-color: $black;
                                              color: $white;
                                          }
                                      }
-                                    
+
                                  }
                              }
                          }
@@ -84,18 +97,25 @@
                          }
 
                          .members-section {
-                             margin-bottom: 20px;
-
-                             p {
-                                 margin-bottom: 5px;
-
-                                 a {
-                                     color: $black;
-                                     font-size: 14px;
-                                     text-decoration: underline;
-                                 }
-                             }
-                         }
+                            margin-bottom: 30px;
+                            a {
+                               color: $black;
+                               font-size: 12px;
+                               text-decoration: none;
+                               font-size: 14px;
+                               text-decoration: none;
+                               border: 1px solid $light;
+                               padding: 5px 10px;
+                               display: inline;
+                               margin-left: 10px;
+                               border-radius: 5px;
+                               font-family: $regular;
+                               &:hover{
+                                   background-color: $primary;
+                                   color: $white;
+                               }
+                           }
+                        }
 
                      }
 
@@ -139,6 +159,7 @@
                                          word-spacing: normal;
                                          white-space: nowrap;
                                          padding: 10px 5px;
+                                         color: $black;
                                      }
 
                                  }
@@ -154,6 +175,21 @@
                                      td {
                                          font-size: 14px;
                                          padding: 10px 5px;
+                                         color: $dark;
+                                         font-family: $regular;
+
+
+                                         a {
+                                             color: $dark;
+                                             text-decoration: underline;
+
+                                             &:hover {
+                                                 color: $black;
+                                                 text-decoration: underline;
+
+                                             }
+                                         }
+
                                      }
                                  }
                              }
@@ -165,13 +201,18 @@
      }
  }
 
- .myacc-menu{
-    margin-left: auto;
-    .nav-link{
-        padding: 0;
-        img{margin: 0; margin-left: 10px;}
-    }
-}
+ .myacc-menu {
+     margin-left: auto;
+
+     .nav-link {
+         padding: 0;
+
+         img {
+             margin: 0;
+             margin-left: 10px;
+         }
+     }
+ }
 
 
 
@@ -192,148 +233,169 @@
  //@include orange-myaccount--xs();
  @mixin orange-myaccount--xs() {
 
-    .orange-myaccount{
+     .orange-myaccount {
 
-        .org-myacc{
-            .org-container{
-                .myacc{
-                        .nav-myacc{
-                           
+         .org-myacc {
+             .org-container {
+                 .myacc {
+                     .nav-myacc {
 
-                            .nav-tabs {
-                                margin-bottom: 24px;
-                                padding: 0 20px;
-                                display: flex !important;
-                                overflow-y: hidden;
-                                flex-wrap: nowrap !important;
-   
-                                .nav-item {
+
+                         .nav-tabs {
+                             display: flex !important;
+                             overflow-y: hidden;
+                             flex-wrap: nowrap !important;
+                             .nav-item {
+                                 color: $black;
+                                 font-size: 14px;
+                                 padding:5px;
+                                 margin: 0;
+                                 width: auto;
+                                 white-space: nowrap;
+                                 flex: 1;
+                                 text-align: center;
+
+                             }
+                         }
+
+                     }
+
+                     .tab-content {
+                         .tab-pane {
+                             .nav-profile {
+                                 .nav {
+                                     .nav-item {
+                                         .nav-link {
+                                             color: $black;
+                                             background-color: $white;
+                                             border-color: $black;
+                                             border-radius: 0;
+                                             border: 2px solid $black;
+                                             font-size: 12px;
+                                             padding: 4px 4px;
+                                             
+
+                                             &.active {
+                                                 background-color: $black;
+                                                 color: $white;
+                                             }
+                                         }
+
+                                     }
+                                 }
+                             }
+
+                             .tab-header {
+                                 color: $primary;
+                                 margin-top: 20px;
+                                 margin-bottom: 17px;
+                                 font-size: 18px;
+                             }
+
+                             .tab-subheader {
+                                 font-size: 14px;
+                                 margin-top: 17px;
+                             }
+
+                             .tab-description {
+                                 color: #666666;
+                                 font-size: 12px;
+                                 margin-bottom: 30px;
+
+                             }
+
+                             .members-section {
+                                 margin-bottom: 20px;
+                                 a {
                                     color: $black;
+                                    font-size: 12px;
+                                    text-decoration: none;
                                     font-size: 14px;
-                                    padding: 8px 12px;
-                                    width: auto;
-                                    white-space: nowrap;
-                                    flex: 1;
-                                    
-                                }
-                            }
-                            
-                        }
-    
-                        .tab-content{                       
-                            .tab-pane{
-                                .nav-profile{
-                                    .nav{ 
-                                        .nav-item{
-                                            .nav-link{
-                                                color: $black;
-                                                background-color: $white;
-                                                border-color: $black;                                            
-                                                border-radius: 0;
-                                                border: 2px solid $black;
-                                                font-size: 12px;
-                                                padding: 2px 4px;
-                                                margin: 0 5px;
-                                                &.active{
-                                                    background-color: $black;
-                                                    color:$white;
-                                                }
-                                            }
-                                          
-                                        }
-                                    }
-                                }
-                                .tab-header{
-                                    color:$primary;
-                                    margin-top:20px;
-                                    margin-bottom:17px;
-                                    font-size: 18px;
-                                }
-                                .tab-subheader{
-                                    font-size:14px;
-                                    margin-top:17px;
-                                }
-                                .tab-description{
-                                    color:#666666;
-                                    font-size: 12px;
-                                    margin-bottom: 30px;
-    
-                                }
-                                .members-section{
-                                    margin-bottom:20px;
-                                    p{ margin-bottom:5px;
-                                    a{
-                                    color:$black;
-                                    font-size: 12px;
-                                    text-decoration: underline;
-                                    }}
-                                }
-                         
-                            }
-    
-                            .container{
-                                .row{
-                                    .form-group{
-                                        .form-control{                                        
-                                        border: 1px solid #999999;
-                                        border-radius:0;
-                                        }
-                                    }
-                                }
-                                .tone-selection{
-                                    text-align:center;
-                                    margin:40px 0;
-                                    p{
-                                        a{
-                                            color:$black;
-                                            font-size: 14px;
-                                            text-decoration: underline;
-                                           
-                                    }
-                                }
-                                }
-                                .btn-container{ 
+                                    text-decoration: none;
+                                    border: 1px solid $light;
+                                    padding: 5px 10px;
+                                    margin-left: 10px;
+                                    border-radius: 5px;
+                                    font-family: $regular;
+                                    display: inline-block;
                                     margin-bottom: 10px;
-                                    margin-top:10px;
                                 }
-                            }
-                            .pro-tbl{
-                                table{
-                                    thead{
-                                        tr {
-                                            th{
-                                                font-size:14px;
-                                                border-top:0;
-                                                word-spacing: normal;
-                                                white-space: nowrap;
-                                                padding: 10px 5px;
-                                                min-width: 100px;
-                                                &:first-child{min-width: auto;}
-                                            }
-    
-                                        }
-                                    }
-                                    tbody{
-                                        tr{
-                                           /*  &.select{
+                             }
+
+                         }
+
+                         .container {
+                             .row {
+                                 .form-group {
+                                     .form-control {
+                                         border: 1px solid #999999;
+                                         border-radius: 0;
+                                     }
+                                 }
+                             }
+
+                             .tone-selection {
+                                 text-align: center;
+                                 margin: 40px 0;
+
+                                 p {
+                                     a {
+                                         color: $black;
+                                         font-size: 14px;
+                                         text-decoration: underline;
+
+                                     }
+                                 }
+                             }
+
+                             .btn-container {
+                                 margin-bottom: 10px;
+                                 margin-top: 10px;
+                             }
+                         }
+
+                         .pro-tbl {
+                             table {
+                                 thead {
+                                     tr {
+                                         th {
+                                             font-size: 14px;
+                                             border-top: 0;
+                                             word-spacing: normal;
+                                             white-space: nowrap;
+                                             padding: 10px 5px;
+                                             min-width: 100px;
+
+                                             &:first-child {
+                                                 min-width: auto;
+                                             }
+                                         }
+
+                                     }
+                                 }
+
+                                 tbody {
+                                     tr {
+
+                                         /*  &.select{
                                                 background-color: #FEB17F;
     
                                             } */
-                                            td{
-                                                font-size: 12px;
-                                                padding: 10px 5px;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                }
-            }
-        }
+                                         td {
+                                             font-size: 12px;
+                                             padding: 10px 5px;
+                                         }
+                                     }
+                                 }
+                             }
+                         }
+                     }
+                 }
+             }
+         }
      }
 
-    
+
 
 
 
