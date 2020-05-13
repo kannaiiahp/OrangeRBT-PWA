@@ -1,4 +1,4 @@
-/* Indosat Selfcare Styles  */
+/* Orange RBT - PWA  Styles  */
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @font-face {
   font-family: 'HelveticaNeue-Regular';
@@ -11339,13 +11339,17 @@ h6, .h6 {
 }
 
 .back-nav-cont {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding: 15px 0;
   -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
           box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
   background-color: #000000;
   position: relative;
   z-index: 99;
+}
+
+.back-nav-cont h2 {
+  color: #fff;
 }
 
 .back-nav-cont .back-nav {
@@ -11456,6 +11460,21 @@ h6, .h6 {
   cursor: pointer;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: calc(100% - 1rem);
+  margin: 1rem auto;
+}
+
 @media (max-width: 576px) {
   .modal.fade .modal-dialog {
     -webkit-transform: translate(0, 100vh);
@@ -11475,6 +11494,10 @@ h6, .h6 {
   .modal-dialog {
     max-width: 100%;
     margin: 0 auto;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    min-height: auto;
   }
   .modal-content {
     border: 0;
@@ -11494,6 +11517,7 @@ h6, .h6 {
   background: url(../images/dummy-image-square.jpg) no-repeat 50% 50%;
   background-size: cover;
   position: relative;
+  min-height: 250px;
 }
 
 .herobanner-cont .dif-swiper-herobanner .ban-img-cont #player-container {
@@ -11624,6 +11648,7 @@ h6, .h6 {
   margin: 0;
   min-height: 22px;
   min-width: 150px;
+  margin: 2px 0;
 }
 
 .ban-data-cont .data-info-cont .data-price-cont .price-text {
@@ -11735,7 +11760,7 @@ h6, .h6 {
   overflow-y: scroll;
   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-  background-color: #555555;
+  background-color: #333333;
 }
 
 .orange-comp-header #sidebar.active {
@@ -12079,21 +12104,6 @@ h6, .h6 {
   padding-right: 15px;
 }
 
-.inds-swiper01 .swiper-slide {
-  padding-left: 7.5px;
-  padding-right: 7.5px;
-}
-
-.inds-swiper01 .swiper-slide:first-child {
-  padding-left: 15px;
-  padding-right: 0;
-}
-
-.inds-swiper01 .swiper-slide:last-child {
-  padding-left: 0;
-  padding-right: 15px;
-}
-
 .orange-card001 .card {
   border: 0;
 }
@@ -12431,7 +12441,7 @@ h6, .h6 {
 .orange-sw02-card .card .img-cont {
   background: url(../images/dummy-image-square.jpg) no-repeat 50% 50%;
   background-size: cover;
-  min-height: 150px;
+  min-height: 200px;
   overflow: hidden;
 }
 
@@ -12472,7 +12482,6 @@ h6, .h6 {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 42px;
   margin-bottom: 10px;
 }
 
@@ -12530,7 +12539,7 @@ h6, .h6 {
   position: absolute;
   left: 0px;
   right: 0px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.4);
   top: 0;
   bottom: 0;
   padding: 0px;
@@ -12598,7 +12607,6 @@ h6, .h6 {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  height: 43.2px;
 }
 
 .proj-list-002 .card .card-body .info-main {
@@ -12660,7 +12668,7 @@ h6, .h6 {
   margin-bottom: 0;
   min-width: 100%;
   min-height: 12px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
   font-family: "HelveticaNeue-Regular";
   color: #8F8F8F;
 }
@@ -12815,34 +12823,41 @@ h6, .h6 {
   font-family: "HelveticaNeue-Regular";
 }
 
-.orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs .nav-link:hover, .orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs .nav-link:focus {
-  border-color: #fff #fff #fff;
-  border-bottom: 1px solid #dee2e6;
+.orange-myaccount select {
+  font-family: "HelveticaNeue-Regular";
 }
 
-.orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs .nav-link.active, .orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #fff;
-  border-color: #fff #fff #fff;
+.orange-myaccount .org-myacc .org-container .myacc .nav-myacc {
+  background-color: #FF7900;
+  /* .nav-tabs .nav-link:hover,
+                     .nav-tabs .nav-link:focus {}
+
+                     .nav-tabs .nav-link.active,
+                     .nav-tabs .nav-item.show .nav-link {} */
 }
 
 .orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 0px;
+  padding: 0px;
 }
 
-.orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs {
-  margin-bottom: 24px;
-  padding: 0 15px;
+.orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs .nav-link {
+  border-radius: 0;
+  border: 0;
 }
 
 .orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs .nav-item {
   color: #000000;
   font-size: 18px;
   padding: 8px 8px;
+  margin-right: 10px;
 }
 
-.orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs .nav-item.active {
-  border-bottom: 3px solid #FF7900;
+.orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs .nav-item.active, .orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs .nav-item:hover {
+  border-bottom: 3px solid #fff;
+  background-color: transparent;
+  color: #fff;
 }
 
 .orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .nav-profile .nav .nav-item .nav-link {
@@ -12853,10 +12868,10 @@ h6, .h6 {
   border: 2px solid #000000;
   font-size: 16px;
   padding: 5px 10px;
-  margin: 0 5px;
+  margin: 0 10px 0 0;
 }
 
-.orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .nav-profile .nav .nav-item .nav-link.active {
+.orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .nav-profile .nav .nav-item .nav-link.active, .orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .nav-profile .nav .nav-item .nav-link:hover {
   background-color: #000000;
   color: #fff;
 }
@@ -12880,17 +12895,26 @@ h6, .h6 {
 }
 
 .orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .members-section {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .members-section p {
-  margin-bottom: 5px;
-}
-
-.orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .members-section p a {
+.orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .members-section a {
   color: #000000;
+  font-size: 12px;
+  text-decoration: none;
   font-size: 14px;
-  text-decoration: underline;
+  text-decoration: none;
+  border: 1px solid #8F8F8F;
+  padding: 5px 10px;
+  display: inline;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-family: "HelveticaNeue-Regular";
+}
+
+.orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .members-section a:hover {
+  background-color: #FF7900;
+  color: #fff;
 }
 
 .orange-myaccount .org-myacc .org-container .myacc .tab-content .container .row .form-group .form-control {
@@ -12920,6 +12944,7 @@ h6, .h6 {
   word-spacing: normal;
   white-space: nowrap;
   padding: 10px 5px;
+  color: #000000;
 }
 
 .orange-myaccount .org-myacc .org-container .myacc .tab-content .pro-tbl table tbody tr {
@@ -12932,6 +12957,18 @@ h6, .h6 {
 .orange-myaccount .org-myacc .org-container .myacc .tab-content .pro-tbl table tbody tr td {
   font-size: 14px;
   padding: 10px 5px;
+  color: #707070;
+  font-family: "HelveticaNeue-Regular";
+}
+
+.orange-myaccount .org-myacc .org-container .myacc .tab-content .pro-tbl table tbody tr td a {
+  color: #707070;
+  text-decoration: underline;
+}
+
+.orange-myaccount .org-myacc .org-container .myacc .tab-content .pro-tbl table tbody tr td a:hover {
+  color: #000000;
+  text-decoration: underline;
 }
 
 .myacc-menu {
@@ -13020,10 +13057,26 @@ h6, .h6 {
   margin: 0;
 }
 
-.modal .modal-dialog .mboxtbl td, .modal .modal-dialog .mboxtbl th {
+.modal .modal-dialog .mboxtbl td,
+.modal .modal-dialog .mboxtbl th {
   padding: .5rem;
   padding-left: 0;
+  border-top: 0px solid #dee2e6;
   border-bottom: 1px solid #dee2e6;
+}
+
+.modal .setrbt-btncont .btn {
+  width: 40%;
+}
+
+.modal .atle {
+  color: #707070;
+  font-family: "HelveticaNeue-Regular";
+}
+
+.modal .atle span {
+  color: #000000;
+  font-family: "HelveticaNeue-Bold";
 }
 
 .content-loader {
@@ -13088,6 +13141,83 @@ h6, .h6 {
   100% {
     background-position: 468px 0;
   }
+}
+
+.faq_wrapper .card {
+  margin-bottom: 15px;
+  text-align: left;
+  border-radius: 0px;
+}
+
+.faq_wrapper .card > .card-header {
+  background: none;
+  padding: 0px;
+  border-bottom: 0px;
+}
+
+.faq_wrapper .card > .card-header button {
+  background: none;
+  border: 0px;
+  padding: .75rem 1.25rem;
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+}
+
+/* .faq_wrapper .card > .card-header button.collapsed::before{
+	position:absolute;
+	content: "\f106"; 
+	font-family: 'FontAwesome';
+	
+	top: 10px;
+	right: 15px;
+	font-size: 18px;
+	color: #333;
+}
+.faq_wrapper .card > .card-header button:before{
+	position:absolute;
+	content: "\f078"; 
+	font-family: "Font Awesome 5 Free";
+	top: 10px;
+	right: 15px;
+	font-size: 18px;
+	color: #333;
+} */
+.faq_wrapper .card > .collapse {
+  text-align: left;
+}
+
+.help_container .nav-tabs .nav-item {
+  margin-bottom: 0px;
+}
+
+.help_container .nav-tabs .nav-item .nav-link {
+  border: 0px;
+}
+
+.help_container .nav-tabs .nav-item.show .nav-link, .help_container .nav-tabs .nav-link.active, .help_container .nav-tabs .nav-link.active:hover {
+  border: 0px;
+  border-bottom: 3px solid #ff7900;
+}
+
+.help_container .nav-tabs .nav-link:hover {
+  border: 0px;
+  border-bottom: 2px solid transparent;
+  margin: 0px;
+}
+
+.help_container .tab-content {
+  text-align: left;
+  padding: 20px 15px;
+}
+
+.help_heading {
+  font-size: 1rem;
+  color: #000;
 }
 
 @media (max-width: 1199.98px) {
@@ -13227,6 +13357,18 @@ h6, .h6 {
   .inds-swiper01 {
     padding-right: 0px;
   }
+  .inds-swiper01 .swiper-slide {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+  .inds-swiper01 .swiper-slide:first-child {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+  .inds-swiper01 .swiper-slide:last-child {
+    padding-left: 0;
+    padding-right: 15px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -13301,7 +13443,6 @@ h6, .h6 {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    height: 38.4px;
   }
   .proj-list-002 .card .card-body .info-main {
     display: -webkit-box;
@@ -13448,8 +13589,6 @@ h6, .h6 {
     font-size: 14px;
   }
   .orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs {
-    margin-bottom: 24px;
-    padding: 0 20px;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -13460,12 +13599,14 @@ h6, .h6 {
   .orange-myaccount .org-myacc .org-container .myacc .nav-myacc .nav-tabs .nav-item {
     color: #000000;
     font-size: 14px;
-    padding: 8px 12px;
+    padding: 5px;
+    margin: 0;
     width: auto;
     white-space: nowrap;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    text-align: center;
   }
   .orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .nav-profile .nav .nav-item .nav-link {
     color: #000000;
@@ -13474,8 +13615,7 @@ h6, .h6 {
     border-radius: 0;
     border: 2px solid #000000;
     font-size: 12px;
-    padding: 2px 4px;
-    margin: 0 5px;
+    padding: 4px 4px;
   }
   .orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .nav-profile .nav .nav-item .nav-link.active {
     background-color: #000000;
@@ -13499,13 +13639,19 @@ h6, .h6 {
   .orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .members-section {
     margin-bottom: 20px;
   }
-  .orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .members-section p {
-    margin-bottom: 5px;
-  }
-  .orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .members-section p a {
+  .orange-myaccount .org-myacc .org-container .myacc .tab-content .tab-pane .members-section a {
     color: #000000;
     font-size: 12px;
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1px solid #8F8F8F;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-family: "HelveticaNeue-Regular";
+    display: inline-block;
+    margin-bottom: 10px;
   }
   .orange-myaccount .org-myacc .org-container .myacc .tab-content .container .row .form-group .form-control {
     border: 1px solid #999999;
